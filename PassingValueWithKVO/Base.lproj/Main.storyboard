@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ViewController1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gvc-dc-KEe">
+                                <rect key="frame" x="237" y="174" width="126" height="15.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="126" id="wgy-p3-5PJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="13"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dHJ-LG-FMu">
+                                <rect key="frame" x="255" y="315" width="91" height="30"/>
+                                <state key="normal" title="利用KVO传值"/>
+                                <connections>
+                                    <action selector="tapButton1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VHb-ws-1iS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Gvc-dc-KEe" firstAttribute="centerX" secondItem="dHJ-LG-FMu" secondAttribute="centerX" id="Cbu-xP-79t"/>
+                            <constraint firstItem="Gvc-dc-KEe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="J82-lG-hxU"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dHJ-LG-FMu" secondAttribute="bottom" constant="255" id="k85-cS-E5v"/>
+                            <constraint firstItem="Gvc-dc-KEe" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="154" id="wdO-nI-UfA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button1" destination="dHJ-LG-FMu" id="Zgg-Pf-g6g"/>
+                        <outlet property="lable1" destination="Gvc-dc-KEe" id="npR-CR-yYl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="162" y="354"/>
+        </scene>
+    </scenes>
+</document>
